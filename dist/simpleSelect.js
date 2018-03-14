@@ -69,7 +69,7 @@
 
             for (var i = 0; i < $options.length; i++) {
                 if ($options[i].value === term) {
-                    $($options[i]).prop('selected', true);
+                    $($options[i]).prop('selected', true).change();
                     $container.find('.selected').text(term);
                     break;
                 }
