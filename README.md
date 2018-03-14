@@ -38,3 +38,5 @@ $('#segment').simpleSelect(options);
 | terms             | Termos que serão renderizados dentro do select              | Array vazia `[]`   |
 | notFoundMessage   | Mensagem p/ quando a pesquisa não retornar nehum valor      | `'Não encontrado.'`|
 | defaultSelected   | Texto p/ quando nenhum dos options estiver selecionado      | `'Selecionar...'`  |
+
+[CodePen Example](https://codepen.io/jeffersonRibeiro/pen/dmGeGJ)
