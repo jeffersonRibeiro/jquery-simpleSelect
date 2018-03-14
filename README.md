@@ -1,4 +1,4 @@
-# simpleSelect
+# SimpleSelect
 Plugin Jquery para criar elementos select com opção de search
 
 
