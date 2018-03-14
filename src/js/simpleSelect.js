@@ -29,7 +29,7 @@
         }
 
         function buildSelect(terms) {
-            var selectOptions = '<option>' + options.defaultSelected + '</option>';
+            var selectOptions = '<option value="">' + options.defaultSelected + '</option>';
             for (var i = 0; i < terms.length; i++) {
                 selectOptions += '<option value="' + terms[i] + '">' + terms[i] + '</option>';
             }
