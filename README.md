@@ -1,7 +1,7 @@
 # SimpleSelect
 Plugin Jquery para criar elementos select com opção de search
 
-
+![alt text](./doc/example.png "SimpleSelect Component")
 
 HTML:
 ~~~html
