@@ -1,0 +1,68 @@
+.simple-select {
+  color: #34495e;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border;
+  position: relative; }
+  .simple-select.modal-open .simple-select-modal {
+    display: block; }
+  .simple-select.modal-open .selected {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px; }
+  .simple-select select {
+    display: none; }
+  .simple-select .selected {
+    position: relative;
+    background-color: #fff;
+    border: 1px solid #bdc3c7;
+    border-radius: 3px;
+    padding: 10px 20px;
+    cursor: pointer; }
+    .simple-select .selected:hover {
+      border-color: #95a5a6; }
+      .simple-select .selected:hover::before {
+        border-top-color: #95a5a6; }
+    .simple-select .selected::before {
+      content: '';
+      width: 0;
+      height: 0;
+      border-left: 8px solid transparent;
+      border-right: 8px solid transparent;
+      border-top: 8px solid #bdc3c7;
+      position: absolute;
+      top: 50%;
+      margin-top: -4px;
+      right: 10px; }
+  .simple-select .simple-select-modal {
+    background-color: #fff;
+    display: none;
+    width: 100%;
+    box-sizing: border-box;
+    position: absolute;
+    border: 1px solid #bdc3c7;
+    border-top: 0px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    padding: 0px 10px;
+    padding-bottom: 10px; }
+    .simple-select .simple-select-modal .simple-select-result {
+      overflow-y: auto;
+      max-height: 400px;
+      box-sizing: border-box; }
+    .simple-select .simple-select-modal input {
+      width: 100%;
+      margin: 10px 0px;
+      border: 1px solid #bdc3c7;
+      border-radius: 3px;
+      padding: 10px 20px;
+      box-sizing: border-box; }
+    .simple-select .simple-select-modal span {
+      display: block;
+      padding: 10px;
+      margin: 0;
+      cursor: pointer; }
+      .simple-select .simple-select-modal span:hover {
+        background-color: #ecf0f1; }
+    .simple-select .simple-select-modal span.not-found {
+      cursor: default; }
+      .simple-select .simple-select-modal span.not-found:hover {
+        background-color: #fff; }
