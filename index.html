@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Simple select with search</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./css/simpleSelect.css" rel="stylesheet">
+    <link href="./dist/simpleSelect.min.css" rel="stylesheet">
     <style>
         form input[type=submit]{ margin-top: 20px }
     </style>
@@ -17,11 +17,25 @@
     </form>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
-    <script src="./js/simpleSelect.js"></script>
+    <script src="./dist/simpleSelect-min.js"></script>
     <script>
 
         var options = {
-            
+            terms: [
+                'RESTAURANTE',
+                'PADARIA',
+                'PIZZARIA',
+                'HAMBURGUERIA',
+                'CHURRASCARIA',
+                'COZINHA',
+                'INDUSTRIAL',
+                'TESTE',
+                'JAVASCRIPT',
+                'PHP',
+                'BRAZIL',
+                'CANADA',
+                'MEAN'
+            ]
         }
 
         $('#segment').simpleSelect(options);
