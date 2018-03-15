@@ -26,7 +26,7 @@
             $container.prepend(el);
 
             /* 
-                Se não foi passada termos e tem elementos
+                Se não foi passado termos e tem elementos
                 <option> dentro do select, montar os termos
                 a partir dos childs do <select>
             */
