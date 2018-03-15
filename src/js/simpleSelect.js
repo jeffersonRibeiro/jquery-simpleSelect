@@ -25,6 +25,18 @@
             $container.insertAfter(el);
             $container.prepend(el);
 
+            /* 
+                Se não foi passada termos e tem elementos
+                <option> dentro do select, montar os termos
+                a partir dos childs do <select>
+            */
+            var $childs = el.find('option');
+            if (!options.terms.length && !!$childs.length) {
+                for (var i = 0; i < $childs.length; i++) {
+                    options.terms.push($childs[i].innerText);
+                }
+            }
+
             buildSelect(options.terms);
         }
 

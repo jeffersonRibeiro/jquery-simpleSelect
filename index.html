@@ -4,24 +4,39 @@
     <meta charset="UTF-8">
     <title>Simple select with search</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./dist/simpleSelect.min.css" rel="stylesheet">
+    <link href="./src/css/simpleSelect.css" rel="stylesheet">
     <style>
         form input[type=submit]{ margin-top: 20px }
     </style>
 </head>
 <body>
     <form>
-        <select id="segment" name="segmentation"></select>
+        <select id="segment" name="segmentation">
+            <option>RESTAURANTE</option>
+            <option>PADARIA</option>
+            <option>PIZZARIA</option>
+            <option>HAMBURGUERIA</option>
+            <option>CHURRASCARIA</option>
+            <option>COZINHA</option>
+            <option>INDUSTRIAL</option>
+            <option>TESTE</option>
+            <option>JAVASCRIPT</option>
+            <option>PHP</option>
+            <option>BRAZIL</option>
+            <option>CANADA</option>
+            <option>MEAN</option>
+        </select>
 
         <!-- <input type="submit"/> -->
     </form>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
-    <script src="./dist/simpleSelect-min.js"></script>
+    <script src="./src/js/simpleSelect.js"></script>
     <script>
 
         var options = {
             terms: [
+                ':D dasda',
                 'RESTAURANTE',
                 'PADARIA',
                 'PIZZARIA',
@@ -38,7 +53,7 @@
             ]
         }
 
-        $('#segment').simpleSelect(options);
+        $('#segment').simpleSelect();
 
 
     </script>
