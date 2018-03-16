@@ -1,3 +1,9 @@
+/**
+ * simple-select - Plugin Jquery para criar elementos select com opção de search
+ * @version v1.0.0
+ * @link https://github.com/jeffersonRibeiro/simpleSelect#readme
+ * @license ISC
+ */
 (function($){
     $.fn.simpleSelect = function(options){
         var that = this;
