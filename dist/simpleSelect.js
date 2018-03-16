@@ -40,7 +40,7 @@
             var $childs = that.find('option');
             if (!options.terms.length && !!$childs.length) {
                 for (var i = 0; i < $childs.length; i++) {
-                    if ($childs[i].hasAttribute('data-dont-render') )
+                    if ($childs[i].hasAttribute('data-defaultSelected') )
                         continue;
 
                     options.terms.push($childs[i].innerText);
