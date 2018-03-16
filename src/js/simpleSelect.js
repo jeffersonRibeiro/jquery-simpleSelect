@@ -1,5 +1,6 @@
 (function($){
     $.fn.simpleSelect = function(options){
+        var that = this;
         var optionsDefault = {
             terms: [],
             notFoundMessage: 'Não encontrado.',
@@ -18,33 +19,40 @@
 
         var $container = $(template);
 
-        init(this);
+        init();
 
-        function init(el){
+        function init(){
 
-            $container.insertAfter(el);
-            $container.prepend(el);
-
-            /* 
-                Se não foi passado termos e tem elementos
-                <option> dentro do select, montar os termos
-                a partir dos childs do <select>
-            */
-            var $childs = el.find('option');
-            if (!options.terms.length && !!$childs.length) {
-                for (var i = 0; i < $childs.length; i++) {
-                    options.terms.push($childs[i].innerText);
-                }
-            }
+            $container.insertAfter(that);
+            $container.prepend(that);
 
             buildSelect(options.terms);
         }
 
         function buildSelect(terms) {
             var selectOptions = '<option value="">' + options.defaultSelected + '</option>';
+
+            /* 
+                Se não foi passado termos e tem elementos
+                <option> dentro do select, montar os termos
+                a partir dos childs do <select>
+            */
+            var $childs = that.find('option');
+            if (!options.terms.length && !!$childs.length) {
+                for (var i = 0; i < $childs.length; i++) {
+                    if ($childs[i].hasAttribute('data-dont-render') )
+                        continue;
+
+                    options.terms.push($childs[i].innerText);
+                }
+                selectOptions = '<option value="">' + $childs[0].innerText + '</option>'
+                $container.find('.selected').text($childs[0].innerText);
+            }
+
             for (var i = 0; i < terms.length; i++) {
                 selectOptions += '<option value="' + terms[i] + '">' + terms[i] + '</option>';
             }
+
             $container.find('select').html(selectOptions);
         }
 

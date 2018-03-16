@@ -12,6 +12,7 @@
 <body>
     <form>
         <select id="segment" name="segmentation">
+            <option data-dont-render>:D...</option>
             <option>RESTAURANTE</option>
             <option>PADARIA</option>
             <option>PIZZARIA</option>
@@ -53,7 +54,7 @@
             ]
         }
 
-        $('#segment').simpleSelect();
+        $('#segment').simpleSelect(options);
 
 
     </script>
