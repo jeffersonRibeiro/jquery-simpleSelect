@@ -9,8 +9,8 @@
         var that = this;
         var optionsDefault = {
             terms: [],
-            notFoundMessage: 'Não encontrado.',
-            defaultSelected: 'Selecionar...'
+            notFoundMessage: 'Not found.',
+            defaultSelected: 'Select'
         }
 
         options = $.extend(true, optionsDefault, options);

@@ -1,5 +1,8 @@
 # SimpleSelect
-Plugin Jquery para criar elementos select com opção de search
+
+![alt text](https://img.shields.io/badge/size-2kb-green.svg "2kb")
+
+jQuery Plugin to build select elements with a search feature
 
 ![alt text](./doc/example.png "SimpleSelect Component")
 
@@ -12,14 +15,6 @@ JavaScript
 ~~~javascript
 var options = {
     terms: [
-        'RESTAURANTE',
-        'PADARIA',
-        'PIZZARIA',
-        'HAMBURGUERIA',
-        'CHURRASCARIA',
-        'COZINHA',
-        'INDUSTRIAL',
-        'TESTE',
         'JAVASCRIPT',
         'PHP',
         'BRAZIL',
@@ -31,12 +26,32 @@ var options = {
 $('#segment').simpleSelect(options);
 ~~~
 
+It works that way too.
+
+~~~html
+<select id="segment" name="segmentation">
+    <option data-defaultSelected>Select</option> 
+    <option>JAVASCRIPT</option>
+    <option>PHP</option>
+    <option>BRAZIL</option>
+    <option>CANADA</option>
+    <option>MEAN</option>
+</select>
+~~~
+
+JavaScript
+~~~javascript
+$('#segment').simpleSelect();
+~~~
+
+
+
 ### Options
 
 | Name              | Description                                                 | Default            |
 | ----------------- |:-----------------------------------------------------------:|:-------------------|
-| terms             | Termos que serão renderizados dentro do select              | Array vazia `[]`   |
-| notFoundMessage   | Mensagem p/ quando a pesquisa não retornar nenhum valor     | `'Não encontrado.'`|
-| defaultSelected   | Texto p/ quando nenhum dos options estiver selecionado      | `'Selecionar...'`  |
+| terms             | select element options                                            | Empty Array `[]`   |
+| notFoundMessage   | Message to show when no terms are found                     | `'Not found.'`     |
+| defaultSelected   | Initial select element term (will not be shown in the options)    | `'Select'`      |
 
 [CodePen Example](https://codepen.io/jeffersonRibeiro/pen/dmGeGJ)
