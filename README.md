@@ -48,10 +48,10 @@ $('#segment').simpleSelect();
 
 ### Options
 
-| Name              | Description                                                 | Default            |
-| ----------------- |:-----------------------------------------------------------:|:-------------------|
-| terms             | select element options                                            | Empty Array `[]`   |
-| notFoundMessage   | Message to show when no terms are found                     | `'Not found.'`     |
-| defaultSelected   | Initial select element term (will not be shown in the options)    | `'Select'`      |
+| Name              | Description                                                    | Default            |
+| ----------------- |:--------------------------------------------------------------:|:-------------------|
+| terms             | select element options                                         | Empty Array `[]`   |
+| notFoundMessage   | Message to show when no terms are found                        | `'Not found.'`     |
+| defaultSelected   | Initial select element term (will not be shown in the options) | `'Select'`         |
 
 [CodePen Example](https://codepen.io/jeffersonRibeiro/pen/dmGeGJ)
