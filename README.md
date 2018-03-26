@@ -4,7 +4,7 @@
 
 jQuery Plugin to build select elements with a search feature
 
-![alt text](./doc/example.png "SimpleSelect Component")
+![alt text](./doc/demo.gif "SimpleSelect Component")
 
 HTML:
 ~~~html
