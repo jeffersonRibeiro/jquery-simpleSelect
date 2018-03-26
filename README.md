@@ -1,5 +1,5 @@
 # SimpleSelect
-Plugin Jquery para criar elementos select com opção de search
+jQuery Plugin to build <select> elements with a search feature - 2kb
 
 ![alt text](./doc/example.png "SimpleSelect Component")
 
@@ -12,14 +12,6 @@ JavaScript
 ~~~javascript
 var options = {
     terms: [
-        'RESTAURANTE',
-        'PADARIA',
-        'PIZZARIA',
-        'HAMBURGUERIA',
-        'CHURRASCARIA',
-        'COZINHA',
-        'INDUSTRIAL',
-        'TESTE',
         'JAVASCRIPT',
         'PHP',
         'BRAZIL',
@@ -35,8 +27,8 @@ $('#segment').simpleSelect(options);
 
 | Name              | Description                                                 | Default            |
 | ----------------- |:-----------------------------------------------------------:|:-------------------|
-| terms             | Termos que serão renderizados dentro do select              | Array vazia `[]`   |
-| notFoundMessage   | Mensagem p/ quando a pesquisa não retornar nenhum valor     | `'Não encontrado.'`|
-| defaultSelected   | Texto p/ quando nenhum dos options estiver selecionado      | `'Selecionar...'`  |
+| terms             | <select> options                                            | Empty Array `[]`   |
+| notFoundMessage   | Message to show when no terms are found                     | `'Not found.'`     |
+| defaultSelected   | Initial <select> term (will not be shown in the options)    | `'Select...'`      |
 
 [CodePen Example](https://codepen.io/jeffersonRibeiro/pen/dmGeGJ)
