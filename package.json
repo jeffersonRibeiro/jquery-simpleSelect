@@ -1,31 +1,11 @@
 {
-  "name": "simple-select",
+  "name": "select_search",
   "version": "1.0.0",
-  "description": "Plugin Jquery para criar elementos select com opção de search",
-  "main": "gulpfile.js",
-  "dependencies": {},
-  "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-header": "^2.0.5",
-    "gulp-minify": "^2.1.0",
-    "gulp-rename": "^1.2.2",
-    "gulp-sass": "^3.1.0"
-  },
+  "description": "",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jeffersonRibeiro/simpleSelect.git"
-  },
-  "keywords": [
-    "JavaScript",
-    "Jquery"
-  ],
-  "author": "Jefferson Ribeiro",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/jeffersonRibeiro/simpleSelect/issues"
-  },
-  "homepage": "https://github.com/jeffersonRibeiro/simpleSelect#readme"
+  "author": "",
+  "license": "MIT"
 }
