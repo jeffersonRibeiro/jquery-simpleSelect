@@ -2,7 +2,7 @@
 
 ![alt text](https://img.shields.io/badge/size-2kb-green.svg "2kb")
 
-jQuery Plugin to build select elements with a search feature
+jQuery Plugin to build select elements with a search feature.
 
 ![alt text](./doc/demo.gif "SimpleSelect Component")
 
