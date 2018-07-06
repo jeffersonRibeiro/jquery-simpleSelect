@@ -26,7 +26,7 @@ var options = {
 $('#segment').simpleSelect(options);
 ~~~
 
-It works that way too.
+Inline,
 
 ~~~html
 <select id="segment" name="segmentation">
